@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <style>
+        /*Halama untuk bagian body*/
+        body {
+            background: url(gambar/gambarMenu.png);
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            font-family: 'Courier New', monospace;
+            backdrop-filter: blur(5px);
+        }
+
+        /*-----------------*/
+
+
+        /*Navigation bar*/
+        nav {
+            background-color: #333;
+            padding: 10px;
+        }
+
+        /*-----------------*/
+
+
+        /*Header 2*/
+        h2 {
+            text-align: center;
+            color: white;
+            margin: 0;
+            padding: 10px;
+        }
+
+        /*-----------------*/
+
+
+        /*Bagian menu*/
+        .menu {
+            background-color: rgba(255, 255, 255, 0.8);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 40vh;
+            width: 300px;
+            border: 2px solid #333;
+            border-radius: 10px;
+            padding: 10px;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: rgb(90, 80, 80);
+            margin: 10px;
+            padding: 10px;
+            border: 2px solid rgb(51, 41, 41);
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            
+        }
+
+        .menu a.kembali {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            font-size: 12px;
+            width: 50px;
+            height: 20px;
+            padding: 5px;
+            border-radius: 3px;
+        }
+
+        .menu a:hover {
+            background-color: rgb(15, 15, 15);
+            color: #faf0f0;
+        }
+
+        .scale-in-center {
+            -webkit-animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        }
+
+        @-webkit-keyframes scale-in-center {
+            0% {
+                -webkit-transform: scale(0);
+                transform: scale(0);
+                opacity: 1;
+            }
+
+            100% {
+                -webkit-transform: scale(1);
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        @keyframes scale-in-center {
+            0% {
+                -webkit-transform: scale(0);
+                transform: scale(0);
+                opacity: 1;
+            }
+
+            100% {
+                -webkit-transform: scale(1);
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        /*-----------------*/
+    </style>
+</head>
+
+<body>
+    <div class="scale-in-center">
+        <nav>
+            <h2>Menu Website</h2>
+        </nav>
+    </div>
+    <div class="menu">
+        <a class="kembali" href="index.html">Kembali</a>
+        <a href="biografi.html">Biografi Pak Juli</a>
+        <a href="nama.html">Nama Anggota Kelompok</a>
+    </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

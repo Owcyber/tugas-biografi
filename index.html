@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Bindo</title>
+    <style>
+        /*background*/
+        body {
+            background: url(gambar/gambar1.jpg) no-repeat;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            backdrop-filter: blur(5px);
+        }
+        /*-----------*/
+
+        /*text*/
+        .container {
+            text-align: center;
+            font-family: 'Roboto', sans-serif;
+            color: white;
+        }
+        /*-----------*/
+
+        /*Link*/
+        a {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #ff9f20;
+        color: #000;
+        font-weight: bold;
+        text-decoration: none;
+        border-radius: 5px;
+        margin-top: 20px;
+        transition: background-color 0.3s ease;
+        }
+
+        a:hover {
+        background-color: #5ef8d2;
+        }
+        /*-----------*/
+
+        /*bayangan text*/
+        .paragraf {
+            color: #fff;
+            text-shadow:
+            0 0 5px #fd3232,
+            0 0 10px #61ff4d,
+            0 0 15px #ff31b0,
+            0 0 20px #1fddff;
+            font-size: 50px;
+            font-family: 'Courier New', monospace;
+            animation: flicker 10s infinite;
+        }
+  
+        @keyframes flicker {
+            0%, 18%, 22%, 25%, 53%, 57%, 100% {
+            text-shadow:
+            0 0 4px #ff3c2e,
+            0 0 11px #5457e6,
+            0 0 19px #39e1ff,
+            0 0 40px #ff00de;
+        }
+  
+        20%, 24%, 55% {
+        text-shadow: none;
+        }
+    }
+  
+/*-----------*/
+
+/*coding untuk animasi*/
+.slide-top {
+    font-size: 60px;
+	-webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+ @-webkit-keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(2);
+              transform: scale(2);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+    
+  }
+  @keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(2);
+              transform: scale(2);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+ /*-----------*/
+
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="slide-top">
+
+            <div class="paragraf">
+
+            <h1>Selamat datang <br>Di website kelompok 6</h1>
+            </div>
+        </div>
+        <a href="menu.html">Klik untuk lanjut</a>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
